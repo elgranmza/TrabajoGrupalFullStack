@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5b45e;
+
+
+
+}
+
+header {
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  background: #acacac;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(0, 0%, 95%, 0.459), hsla(0, 0%, 20%, 0.664)), url(/img/main.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(0, 0%, 45%, 0.459), hsla(300, 0%, 41%, 0.664)), url(/img/main.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: sticky;
+}
+
+.wave {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 90;
+}
+
+
+nav {
+  text-align: center; /* Centra horizontalmente el contenido */
+}
+
+nav ul {
+  background-color: #bfa25e;
+  width: 100%;
+  list-style-type: none;
+  padding: 0; /* Elimina el relleno para evitar desplazamientos innecesarios */
+}
+
+nav ul li {
+  display: inline-block; /* Cambia float por inline-block para permitir el centrado */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em; /* Se ajusta el tamaño de fuente para que sea responsive */
+  padding: 10px 20px; /* Añade espacio alrededor del texto */
+}
+
+
+.chefH img {
+  /* neon imagen logo */
+  max-width: 100%; /* Se ajusta al ancho máximo del contenedor */
+  height: auto; /* Se ajusta automáticamente la altura según el ancho */
+  border-radius: 10%; /* Borde curvo */
+  box-shadow: inset 0 0 20px #ffff, 0 0 50px #8d4925;
+}
+
+
+nav ul li a {
+  font-size: 50%;
+  display: grid;
+  padding: 100px;
+  color: #fffcfc;
+  text-decoration: solid;
+
+}
+
+nav ul li a:hover {
+
+  scale: 150%;
+
+}
+
+.chefH {
+  margin: auto;
+  padding: 1%;
+  display: grid;
+  place-items: center;
+  object-fit: cover;
+}
+.eventos {
+  display: flex; /* Convierte el contenedor en un contenedor flexible */
+  flex-direction: row; /* Por defecto, coloca los elementos en una fila */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas si no caben en una sola fila */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  gap: 20px; /* Espacio entre las imágenes */
+  padding: 20px; /* Ajusta el relleno para separar los elementos */
+  margin: auto; /* Centra el bloque en la página */
+  text-align: center; /* Alinea el texto al centro */
+  margin-top: 30px; /* Añade espacio entre el h2 y las imágenes */
+}
+
+.eventos img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  border-radius: 5%; /* Borde curvo */
+  object-fit: cover; /* La imagen se adapta al contenedor manteniendo su relación de aspecto */
+}
+
+@media (max-width: 768px) { /* Consulta de medios para pantallas más pequeñas */
+  .eventos {
+    flex-direction: column; /* Cambia la dirección del flujo a columna */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+}
+
+
+h2 {
+  font-size: 300%;
+  display: grid;
+  margin-bottom: 30px; /* Añade espacio debajo del h2 */
+}
+
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 3% auto;
+}
+
+.articulos {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.secciones {
+  display: flex;
+  align-items: flex-start;
+  padding: 2%;
+}
+
+.imgcht img,
+footer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards .card {
+  background: #4d0686;
+  width: 46%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+  width: 30%;
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.cards .card .contenido-texto-card {
+  width: 70%;
+  color: #fff;
+  padding: 10px;
+}
+
+.cards .card .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards .card {
+    width: 100%;
+  }
+}
+
+.sobre-nosotros {
+  padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.imagen-about-us {
+  width: 100%;
+  max-width: 400px; /* Ajusta este valor según sea necesario */
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros .contenido-textos {
+  width: 100%;
+  max-width: 600px; /* Ajusta este valor según sea necesario */
+  margin-bottom: 20px;
+}
+
+.contenido-textos h3 {
+  margin-bottom: 15px;
+}
+
+.contenido-textos h3 span {
+  background: #4d0686;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
+}
+
+.contenido-textos p {
+  padding: 0 0 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
